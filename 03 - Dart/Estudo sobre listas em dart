@@ -1,0 +1,41 @@
+Lists in dart
+Os arrays são tratados no dart como List.
+Existem dois tipos de listas em dart, primeiro: Fixed Length (Tamanho fixo) e segundo: Growable List (Tamanho variável)
+
+1 - Fixed Length
+	- Inicialização de forma literal(Declarando e iniciando os elementos)
+	ex: var numeros = <int> [2,10,5,3,6]; // length = 5 // index = length-1 = 4 (Pois o index começa em 0)
+
+2 - Gowable	
+	- Inicialização pelo construtor(Sem iniciar os elementos)
+	ex: var numeros = []; // Se fizer isso o array ficar como tipo <Dynamic> aceitando todos os tipos e podendo inserir vários elementos.
+		
+	ex1: var numeros = <int> []; // Dessa forma foi definido o tipo de dado, e também pode inserir vários elementos.
+	
+Observações:
+
+- Adicionando elementos
+	ex: <nomeDaLista>.add(elemento);
+	
+- Adicionando vários elementos
+	ex: <nomeDaLista>.addAll(['elemento1' , 'elemento2']);
+
+- Adicionando elementos em um índice específico
+	ex: <nomeDalista>.insert(index, elemento);
+
+- Remover um elemento específico
+	ex: <nomeDaLista>.removeAt(index);
+	
+- Remover todos os elementos
+	ex: <nomeDaLista>.clear();
+	
+- Acessar um elemento qualqer atravéis do index
+	ex: <nomeDaLista>[index];
+
+- Localizar um elemento
+	ex: <nomeDaLista>.indexOf(elemento);
+
+- Ordenar um array
+	ex: <nomeDaLista>.sort();	
+	
+
